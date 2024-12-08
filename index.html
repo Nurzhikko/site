@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LingvoPartners</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<div class="menu-icon" onclick="toggleSidebar()">☰</div>
+		<h1>LingvoPartners</h1>
+	</header>
+
+	<!-- Боковое меню -->
+	<nav id="sidebar">
+		<ul>
+			<li><a href="index.html">Главная страница</a></li>
+			<li><a href="history.html">История</a></li>
+			<li><a href="works.html">Наши работы</a></li>
+			<li><a href="languages.html">Языки</a></li>
+			<li><a href="contact.html">Контакты</a></li>
+			<li><a href="trello.html">Trello</a></li>
+		</ul>
+	</nav>
+
+	<main>
+
+		<section class="team">
+			<h2>Наша команда:</h2>
+			<div class="team-members">
+				<div class="member">
+					<img src="1.jpg" alt="Нурила">
+					<p>Нурила</p>
+				</div>
+				<div class="member">
+					<img src="2.jpg" alt="Айым">
+					<p>Айым</p>
+				</div>
+				<div class="member">
+					<img src="3.jpg" alt="Жанрайым">
+					<p>Жанрайым</p>
+				</div>
+				<div class="member">
+					<img src="4.jpg" alt="Алихан">
+					<p>Алихан</p>
+				</div>
+				<div class="member">
+					<img src="5.jpg" alt="Амина">
+					<p>Амина</p>
+				</div>
+				<div class="member">
+					<img src="6.jpg" alt="Нурай">
+					<p>Нурай</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>© 2024. Все права защищены.</p>
+	</footer>
+
+	<script>
+		// Функция для открытия и закрытия бокового меню
+		function toggleSidebar() {
+			const sidebar = document.getElementById('sidebar');
+			sidebar.classList.toggle('active');
+		}
+	</script>
+</body>
+
+</html>

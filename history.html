@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LingvoPartners - История</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- Заголовок с кнопкой меню -->
+	<header>
+		<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+		<h1>LingvoPartners</h1>
+	</header>
+
+	<!-- Боковое меню -->
+	<nav id="sidebar">
+		<ul>
+			<li><a href="index.html">Главная страница</a></li>
+			<li><a href="history.html">История</a></li>
+			<li><a href="works.html">Наши работы</a></li>
+			<li><a href="languages.html">Языки</a></li>
+			<li><a href="contact.html">Контакты</a></li>
+			<li><a href="trello.html">Trello</a></li>
+		</ul>
+	</nav>
+
+	<!-- Основной контент страницы -->
+	<main>
+		<h2>История компании</h2>
+		<p>Компания "ЛингвоПартнер" была основана группой профессиональных переводчиков с целью разрушать языковые
+			барьеры и помогать людям эффективно общаться на международной арене. Мы начали с простого, но важного
+			принципа: переводить не только слова, но и идеи, учитывая потребности каждого клиента.
+
+			Наша цель — предоставлять качественные и точные переводы, которые открывают новые возможности для бизнеса и
+			личных проектов. За годы работы мы стали надежным партнером для компаний разных сфер, предлагая
+			индивидуальный подход и высокие стандарты качества. Сегодня мы гордимся тем, что каждый наш проект помогает
+			клиентам быть услышанными в любом уголке мира.</p>
+	</main>
+
+	<!-- Футер -->
+	<footer>
+		<p>© 2024. Все права защищены.</p>
+	</footer>
+
+	<!-- Скрипт для открытия/закрытия бокового меню -->
+	<script>
+		function toggleMenu() {
+			const sidebar = document.getElementById('sidebar');
+			sidebar.classList.toggle('active');
+		}
+	</script>
+</body>
+
+</html>

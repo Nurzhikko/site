@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LingvoPartners - История</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- Заголовок с кнопкой меню -->
+	<header>
+		<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+		<h1>LingvoPartners</h1>
+	</header>
+
+	<!-- Боковое меню -->
+	<nav id="sidebar">
+		<ul>
+			<li><a href="index.html">Главная страница</a></li>
+			<li><a href="history.html">История</a></li>
+			<li><a href="works.html">Наши работы</a></li>
+			<li><a href="languages.html">Языки</a></li>
+			<li><a href="contact.html">Контакты</a></li>
+			<li><a href="trello.html">Trello</a></li>
+		</ul>
+	</nav>
+
+	<!-- Основной контент страницы -->
+	<main>
+		<h2>Trello</h2>
+
+	</main>
+
+	<!-- Футер -->
+	<footer>
+		<p>© 2024. Все права защищены.</p>
+	</footer>
+
+	<!-- Скрипт для открытия/закрытия бокового меню -->
+	<script>
+		function toggleMenu() {
+			const sidebar = document.getElementById('sidebar');
+			sidebar.classList.toggle('active');
+		}
+	</script>
+</body>
+
+</html>

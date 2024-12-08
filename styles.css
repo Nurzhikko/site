@@ -1,0 +1,167 @@
+/* Общий стиль */
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	background: url('фон.avif') no-repeat center center fixed;
+	background-size: cover;
+	/* Масштабирует фон для заполнения экрана */
+}
+
+
+/* Заголовок с кнопкой меню */
+header {
+	background-color: #f5f5f5;
+	color: #000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	position: relative;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+	margin: 0;
+	font-size: 1.8rem;
+}
+
+.menu-icon {
+	font-size: 24px;
+	cursor: pointer;
+	color: #000;
+}
+
+/* Боковое меню */
+nav#sidebar {
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background-color: #f5f5f5;
+	color: #000;
+	overflow: auto;
+	transition: 0.3s;
+	z-index: 1000;
+	padding-top: 1rem;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav#sidebar.active {
+	left: 0;
+}
+
+nav#sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav#sidebar ul li {
+	padding: 10px 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+nav#sidebar ul li a {
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+nav#sidebar ul li a:hover {
+	background-color: #eaeaea;
+	padding-left: 10px;
+	display: block;
+	transition: 0.2s;
+}
+
+/* Галерея */
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	/* Расстояние между элементами */
+	padding: 20px;
+}
+
+.gallery-item {
+	flex: 1 1 100px;
+	/* Базовый размер блока */
+	max-width: 120px;
+	/* Ограничение максимальной ширины */
+	max-height: 120px;
+	/* Ограничение максимальной высоты */
+	overflow: hidden;
+	/* Скрываем лишнее */
+	border-radius: 10px;
+	/* Скругление углов */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	/* Тень для фото */
+}
+
+.gallery-item img {
+	width: 100%;
+	/* Подгонка по ширине блока */
+	height: auto;
+	/* Автоматическая пропорциональная высота */
+	object-fit: cover;
+	/* Заполнение блока без искажения изображения */
+	border-radius: 10px;
+	/* Скругление углов изображения */
+}
+
+/* Раздел "Наша команда" */
+.team {
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.team-members {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.member {
+	text-align: center;
+}
+
+.member img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #ddd;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member p {
+	font-size: 1.1rem;
+	margin-top: 0.5rem;
+	color: #000;
+}
+
+#home {
+	padding: 4rem;
+	color: #000000;
+	background: url('фон.avif') no-repeat center center fixed;
+	background-size: cover;
+	/* Масштабирует фон для заполнения экрана */
+}
+
+/* Футер */
+footer {
+	background: #f5f5f5;
+	color: #000;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+footer p {
+	font-size: 1rem;
+}
